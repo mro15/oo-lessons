@@ -1,5 +1,5 @@
-from pessoa import Pessoa, PessoaConstruida
-from carro import Carro
+from pessoa import Pessoa, PessoaConstruida, Musico
+from carro import Carro, Caminhonete
 
 # Instancia de alice e bob, classe Pessoa
 alice = Pessoa()
@@ -30,3 +30,27 @@ lucia = PessoaConstruida('Lucia', 10, 1.60)
 print('Nome da pessoa construida: ', lucia.nome)
 print('Idade da pessoa construida: ', lucia.idade)
 print('Altura da pessoa construida: ', lucia.altura)
+
+# Instancia da classe Caminhonete que herda da classe Carro
+caminhonete = Caminhonete()
+caminhonete.cor = 'preta'
+caminhonete.tamanho = 2
+caminhonete.localizacao = 'casa'
+caminhonete.ano_fabricacao = 2018
+
+print('Cor da caminhonete: ', caminhonete.cor)
+print('Tamanho da caminhonete: ', caminhonete.tamanho)
+print('Localizacao da caminhonete: ', caminhonete.localizacao)
+print('Ano de fabricacao da caminhonete: ', caminhonete.ano_fabricacao)
+
+caminhonete.lavar()
+caminhonete.acelerar(30)
+
+# Instancia da classe Musico, que herda da classe Pessoa
+musico = Musico('violao')
+musico.nome = 'Marcela'
+
+musico.tocar()
+musico.andar('estudio')
+print('Localizacao: ', musico.localizacao)
+

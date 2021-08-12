@@ -27,3 +27,12 @@ class PessoaConstruida:
         self.nome = nome
         self.idade = idade
         self.altura = altura
+
+class Musico(Pessoa):
+    instrumento = None
+
+    def __init__(self, instrumento):
+        self.instrumento = instrumento
+
+    def tocar(self):
+        print('Tocando: ', self.instrumento)

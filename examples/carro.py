@@ -15,3 +15,11 @@ class Carro:
     def acelerar(self, velocidade):
         print('Acelerando ...')
         self.velocidade = self.velocidade + velocidade
+
+class Caminhonete(Carro):
+    tamanho = None
+    localizacao = None
+
+    def lavar(self):
+        print('Indo ao lava car ...')
+        self.localizacao = 'lava car'
